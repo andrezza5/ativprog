@@ -1,0 +1,35 @@
+
+
+Programa criado em Python
+
+
+import datetime
+
+from datetime import date
+
+
+
+nome = input("nome: ")
+
+dia = int(input("nasceu em que dia? "))
+
+mes = int(input("nasceu em que mes? "))
+
+ano = int(input("nasceu em que ano? "))
+
+
+
+#diferenca data atual e data de nascimento
+
+
+datanasc = datetime.date(ano, mes, dia)
+
+diferenca = (date.today() - datanasc)
+
+
+
+result = (diferenca.days / 365)
+
+
+
+print ('%s tem %d anos' %(nome, result))
